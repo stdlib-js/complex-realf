@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/complex-realf",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "Return the real component of a single-precision complex floating-point number.",
   "license": "Apache-2.0",
   "author": {
