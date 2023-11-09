@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2021 The Stdlib Authors.
@@ -16,30 +16,29 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
 
-// MODULES //
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
 
-var tape = require( 'tape' );
-var Complex64 = require( '@stdlib/complex-float32' );
-var realf = require( './../lib' );
+import { Complex64 } from '@stdlib/types/complex';
+
+/**
+* Returns the real component of a single-precision complex floating-point number.
+*
+* @param z - complex number
+* @returns real component
+*
+* @example
+* var Complex64 = require( `@stdlib/complex/float32` );
+*
+* var z = new Complex64( 5.0, 3.0 );
+*
+* var re = realf( z );
+* // returns 5.0
+*/
+declare function realf( z: Complex64 ): number;
 
 
-// TESTS //
+// EXPORTS //
 
-tape( 'main export is a function', function test( t ) {
-	t.ok( true, __filename );
-	t.strictEqual( typeof realf, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'the function returns the real component of a complex number', function test( t ) {
-	var re;
-	var z;
-
-	z = new Complex64( 3.0, -3.0 );
-	re = realf( z );
-	t.strictEqual( re, 3.0, 'returns expected value' );
-
-	t.end();
-});
+export = realf;
