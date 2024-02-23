@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import realf from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-realf@deno/mod.js';
+import realf from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-realf@v0.2.1-deno/mod.js';
 ```
 
 #### realf( z )
@@ -91,7 +91,7 @@ var re = realf( z );
 import Complex64 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32@deno/mod.js';
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
 import round from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@deno/mod.js';
-import realf from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-realf@deno/mod.js';
+import realf from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-realf@v0.2.1-deno/mod.js';
 
 var re;
 var im;
