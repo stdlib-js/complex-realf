@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2021 The Stdlib Authors.
@@ -16,27 +16,29 @@
 * limitations under the License.
 */
 
-#include "stdlib/complex/realf.h"
-#include "stdlib/complex/float32/ctor.h"
+// TypeScript Version: 4.1
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
+
+import { Complex64 } from '@stdlib/types/complex';
 
 /**
 * Returns the real component of a single-precision complex floating-point number.
 *
-* @param z     single-precision complex floating-point number
-* @return      real component
+* @param z - complex number
+* @returns real component
 *
 * @example
-* #include "stdlib/complex/float32/ctor.h"
+* var Complex64 = require( '@stdlib/complex-float32-ctor' );
 *
-* stdlib_complex64_t z = stdlib_complex64( 5.0f, 2.0f );
+* var z = new Complex64( 5.0, 3.0 );
 *
-* // ...
-*
-* float re = stdlib_realf( z );
-* // returns 5.0f
+* var re = realf( z );
+* // returns 5.0
 */
-float stdlib_realf( const stdlib_complex64_t z ) {
-	stdlib_complex64_parts_t v;
-	v.value = z; // cppcheck-suppress unreadVariable
-	return v.parts[ 0 ];
-}
+declare function realf( z: Complex64 ): number;
+
+
+// EXPORTS //
+
+export = realf;
